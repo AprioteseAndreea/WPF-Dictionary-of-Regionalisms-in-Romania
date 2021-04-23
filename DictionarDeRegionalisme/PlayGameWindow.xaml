@@ -1,0 +1,25 @@
+﻿<Window x:Class="Tema1MVP.PlayGameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tema1MVP"
+        mc:Ignorable="d"
+        Title="PlayGameWindow" Height="450" Width="800">
+    <Canvas>
+        <Label FontSize="25" FontWeight="Bold">Round:</Label>
+        <TextBlock Name="RoundBlock" FontSize="25" Height="43" Width="92" Canvas.Left="98"></TextBlock>
+        <Label FontSize="25" Foreground="Green" FontWeight="Bold" Canvas.Left="613">Correct:</Label>
+        <Label FontSize="25" Foreground="Red" FontWeight="Bold" Canvas.Left="594" Canvas.Top="43">Incorrect:</Label>
+        <TextBlock Name="CorrectBlock" FontSize="25" Height="43" Width="66" Canvas.Left="726"></TextBlock>
+        <TextBlock Name="IncorrectBlock" FontSize="25" Height="43" Width="66" Canvas.Left="726" Canvas.Top="43"></TextBlock>
+        <Image Name="Image" Height="175" Width="273" Canvas.Left="10" Canvas.Top="148"></Image>
+        <Label Name="LabelComplete" FontSize="25" Canvas.Left="288" Canvas.Top="161" Width="298">Complete your answer</Label>
+        <TextBox Name="AnswerText"  FontSize="25" Canvas.Left="288" Canvas.Top="210" Width="387" Height="53" ></TextBox>
+        <Button Name="nextbutton" Click="nextbutton_Click" Width="150" Height="53" Background="White" BorderBrush="White" Canvas.Left="613" Canvas.Top="336" >
+            <Image Name="NextButton" Source="D:\nextbutton.jpg" Width="147"
+RenderTransformOrigin="0.667,2.158" Height="53"></Image>
+        </Button>
+        <TextBlock Name="categoryBox" Height="49" FontSize="20" Width="273" Canvas.Left="10" Canvas.Top="328"></TextBlock>
+    </Canvas>
+</Window>

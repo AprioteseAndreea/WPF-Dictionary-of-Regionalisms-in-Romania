@@ -1,0 +1,44 @@
+﻿<Window x:Class="Tema1MVP.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tema1MVP"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="803" Width="900" >
+    <Canvas>
+
+        <WrapPanel Width="893">
+            <Image Source="D:\logo2.jpg" Width="883" RenderTransformOrigin="0.667,2.158" Height="136"></Image>
+            <Button Name="AddButton" Width="214" Click="AddButton_Click" Height="66" BorderBrush="Transparent" Background="Transparent" >
+                <Image Source="D:\addword.jpg" Width="214" RenderTransformOrigin="0.667,2.158" Height="66"></Image>
+            </Button>
+            <Button Name="ModifyButton" Width="220" Height="66" Click="ModifyButton_Click" BorderBrush="Transparent" Background="Transparent" >
+                <Image Source="D:\modifyword.jpg" Width="215" RenderTransformOrigin="0.667,2.158" Height="85"></Image>
+            </Button>
+            <Button Name="EraseButton" Width="200" Height="56"  Click="EraseButton_Click"  BorderBrush="Transparent" Background="Transparent" >
+                <Image Source="D:\eraseword.jpg" Width="190" RenderTransformOrigin="0.667,2.158" Height="56"></Image>
+            </Button>
+            <Button Name="PlayGameButton" Width="221" Height="56" Click="PlayGameButton_Click" BorderBrush="Transparent" Background="Transparent" >
+                <Image Source="D:\startgame.jpg" Width="218" RenderTransformOrigin="0.667,2.158" Height="56"></Image>
+            </Button>
+            <Image Source="D:\search.jpg" Width="164" RenderTransformOrigin="0.667,2.158" Height="71"/>
+            <TextBox Name="textBox" KeyUp="TextBox_KeyUp" Height="38" Background="Transparent" TextWrapping="Wrap"  Width="670" FontSize="25" />
+            <Border Width="872" Height="150" BorderBrush="Black" BorderThickness="1">
+                <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="-0.333,-0.333,-1.333,-0.333">
+                    <StackPanel Name="resultStack"></StackPanel>
+                </ScrollViewer>
+            </Border>
+            <TextBlock Text=" Alegeti categoria:   " FontSize="20" Width="158"/>
+            <ComboBox Name="CategoryBox" PreviewMouseLeftButtonDown="CategoryBox_MouseLeftButtonUp">
+            </ComboBox>
+        </WrapPanel>
+        <Label Name="LabelWord" HorizontalContentAlignment="Center" Canvas.Left="10" FontSize="25"  Canvas.Top="458" Height="52" Width="276"></Label>
+        <Image Name="ImageWord" Height="175" Width="276" Canvas.Left="10" Canvas.Top="510"></Image>
+        <Label Name="CategoryWord" FontSize="20" Canvas.Left="308" Canvas.Top="472" Height="38" Width="105" >Categoria:</Label>
+        <TextBlock Name="CategoryTextBlock" FontSize="20" Height="38" Width="252" Canvas.Left="413" Canvas.Top="472"></TextBlock>
+        <Label Name="DescriereWord" FontSize="20" Canvas.Left="308" Canvas.Top="515" Height="38" Width="105" >Descriere:</Label>
+        <TextBlock Name="DescriptionTextBlock" FontSize="20" Height="148" Width="340" Canvas.Left="413" Canvas.Top="515"></TextBlock>
+
+    </Canvas>
+</Window>
